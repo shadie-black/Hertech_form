@@ -4,11 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+input[type=text], select, textarea {
+  width: 40%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+ 
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  
+  display: inline-block;
+}
+
+
+    </style>
 </head>
 <body>
-    <header>
-       <p>This is the header for blog project</p>
+    <form>
+       <fieldset>
+        <legend>Your Address</legend>
+       <label>First name</label> <input  style="margin-left:120px" type="text" name="firstname" placeholder="Enter your firstname"/><br><br>
+       <label>Last name </label>  <input style="margin-left:120px" type="text" name="lastname" placeholder="Enter your lastname"/><br><br>
+       <label>Street </label>   <input style="margin-left:153px"  type="text" name="street" placeholder="Enter your street"/><br><br>
+       <label >City </label>    <input style="margin-left:163px" type="text" name="city" placeholder="Enter your city"/><br><br>
+    </fieldset>
 
-    </header>
+    <fieldset>
+        <legend>Additional Details</legend>
+       <label>Biography</label><textarea style="margin-left:120px" id="" name="" rows="4" cols="50">
+        </textarea><br><br>
+       <label>Image</label><input style="margin-left:157px" type="file" id="fileid" /><br><br>
+        <label>Age group</label> 
+        <select  style="margin-left:110px" name="0-9years" id="age">
+          <option value="0-9years">0-9years</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <br><br>
+       
+    </fieldset>
+
+    <fieldset>
+        <legend>Interest</legend>
+       <label>Hobbies</label><textarea style="margin-left:130px" id="" name="" rows="4" cols="50">
+        </textarea><br><br>
+       
+        <label>Favourite Car?</label> 
+        <select style="margin-left:80px" name="volvo" id="volvo">
+          <option value="toyota">Toyoto</option>
+          <option value="nissan">Nissan</option>
+          <option value="benz">Benz</option>
+
+        </select>
+        <br><br>
+        <label>Favourite Public Transport?</label><textarea id="" name="" rows="4" cols="50">
+        </textarea><br><br>
+       
+    </fieldset>
+  
+
+    </form>
 </body>
 </html>
